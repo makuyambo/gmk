@@ -1,0 +1,33 @@
+if (global.btnRight=true)
+{
+    if !(sprite_index=p_punch3_r)
+    if !(sprite_index=p_punch3_l)
+    if !(sprite_index=p_punch3_r)
+    if !(sprite_index=p_punch3_r)
+    if !(sprite_index=p_punch3_r)
+    {
+        if (place_free(x+5,y+0))
+        {
+            x=x+5;
+            y=y+0;
+            if (global.hudLadder=false)
+            {
+                sprite_index=p_run_r;
+                image_index=-1;
+                image_speed=0.25;
+                if (place_free(x+0,y+1))
+                {
+                    sprite_index=p_jump_r;
+                    image_index=-1;
+                    image_speed=0;
+                }
+            }
+        }
+    }
+    global.facing=1;
+}
+if (global.btnRight=false)
+{
+    /*execute the code that is in the DnD*/
+    if sprite_index = (p_run_r) then {sprite_index = (p_r)image_speed = 0.5};
+}
