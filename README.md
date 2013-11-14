@@ -1,0 +1,4 @@
+gmk
+===
+
+gamemaker gml scripts
